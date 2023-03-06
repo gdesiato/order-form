@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Computer Component Order Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Computer Component Order Form</h1>
+<form>
+  <h2>Personal Information</h2>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <h2>Order Information</h2>
+  <label for="processor">Processor:</label>
+  <select id="processor" name="processor">
+    <option value="Intel Core i5">Intel Core i5</option>
+    <option value="Intel Core i7">Intel Core i7</option>
+    <option value="AMD Ryzen 5">AMD Ryzen 5</option>
+    <option value="AMD Ryzen 7">AMD Ryzen 7</option>
+  </select>
+
+  <label for="graphics-card">Graphics Card:</label>
+  <select id="graphics-card" name="graphics-card">
+    <option value="Nvidia GeForce RTX 2060">Nvidia GeForce RTX 2060</option>
+    <option value="Nvidia GeForce RTX 3070">Nvidia GeForce RTX 3070</option>
+    <option value="AMD Radeon RX 5600 XT">AMD Radeon RX 5600 XT</option>
+    <option value="AMD Radeon RX 5700 XT">AMD Radeon RX 5700 XT</option>
+  </select>
+
+  <label for="memory">Memory (GB):</label>
+  <input type="number" id="memory" name="memory" min="4" max="32" required>
+
+  <label for="storage">Storage (GB):</label>
+  <input type="number" id="storage" name="storage" min="256" max="2048" required>
+
+  <input type="submit" value="Submit Order">
+</form>
+
+<script src="order.js"></script>
+
+</body>
+</html>
